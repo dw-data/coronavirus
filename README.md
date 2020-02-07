@@ -1,5 +1,5 @@
-
-\#Data analysis: Why coronavirus fears are disproportionate
+Data analysis: Why coronavirus fears are disproportionate
+=========================================================
 
 Comparing the new coronavirus with other viruses shows that panic,
 especially outside of Wuhan, China, is out of place. The current
@@ -14,7 +14,8 @@ that story.
 
 **Story by:** [Kira Schacht](https://twitter.com/daten_drang)
 
-\#Setup
+Setup
+=====
 
 ``` r
 ## install and load needs, if not yet present
@@ -104,20 +105,13 @@ finalise_dwplot(plot, "Source: CDC, WHO, CIDRAP, studies, via The MicrobeScope",
                 width_pixels=1920, height_pixels= 2200)
 ```
 
-    ## Warning: Removed 7 rows containing missing values (geom_segment).
-
-    ## Warning: Removed 7 rows containing missing values (geom_text).
-
 ``` r
 finalise_dwplot(plot, "Source: CDC, WHO, CIDRAP, studies, via The MicrobeScope", 
                 "../../graphics/preliminary/cov_incidence.svg", "svg",
                 width_pixels=1920, height_pixels= 2200)
 ```
 
-    ## Warning: Removed 7 rows containing missing values (geom_segment).
-
-    ## Warning: Removed 7 rows containing missing values (geom_text).
-
+ 
 ![](corona_files/figure-markdown_github/unnamed-chunk-3-1.png)
 
 Death rates and fatalities of different viruses
@@ -148,12 +142,6 @@ ggplot(d_plot, aes(area = cases, fill = var, subgroup = Name, label = Name)) +
   ggtitle("Deadliness of different viruses")
 ```
 
-    ## Warning: Removed 2 rows containing missing values (geom_treemap).
-
-    ## Warning: Removed 2 rows containing missing values (geom_subgroup_border).
-
-    ## Warning: Removed 2 rows containing missing values (geom_subgroup_text).
-
 ![](corona_files/figure-markdown_github/unnamed-chunk-4-1.png)
 
 ``` r
@@ -161,21 +149,9 @@ ggplot(d_plot, aes(area = cases, fill = var, subgroup = Name, label = Name)) +
 ggsave("../../graphics/preliminary/cov_deadliness.png", device = "png", width= 1920/72, height= 1920/72, dpi = 72, units="in")
 ```
 
-    ## Warning: Removed 2 rows containing missing values (geom_treemap).
-
-    ## Warning: Removed 2 rows containing missing values (geom_subgroup_border).
-
-    ## Warning: Removed 2 rows containing missing values (geom_subgroup_text).
-
 ``` r
 ggsave("../../graphics/preliminary/cov_deadliness.svg", device = "svg", width= 1920/72, height= 1920/72, dpi = 72, units="in")
 ```
-
-    ## Warning: Removed 2 rows containing missing values (geom_treemap).
-
-    ## Warning: Removed 2 rows containing missing values (geom_subgroup_border).
-
-    ## Warning: Removed 2 rows containing missing values (geom_subgroup_text).
 
 Death rates and fatalities of different viruses
 ===============================================
