@@ -56,17 +56,7 @@ d = read.csv2("MicrobeScope_2018.csv")
 virus = d %>% filter(Pathogen_type == "virus")
 
 
-#DW colours
-dwcols = c("hellblau" = "#00A5FF", "mittelblau" = "#0064b4", "dunkelblau" = "#002d5a", "grey1" = "#f1f3f5")
-dw_grey = c("grey14" = "#323c45", "grey13" = "#3b444d", "grey12" = "#4b545c", "grey11" = "#5c666e",
-            "grey10" = "#6d7780", "grey9" = "#7f8891", "grey8" = "#9099a3", "grey7" = "#a1abb4", "grey6" = "#b2bcc5",
-            "grey5" = "#bfc7ce", "grey4" = "#cbd2d8", "grey3" = "#d8dde2", "grey2" = "#e4e8eb", "grey1" = "#f1f3f5") %>% rev()
-dw_info = c("hellblau" = "#00a5ff", "dunkelblau" = "#002d5a", "orangerot" = "#d44820",
-            "grün" = "#96be00", "rot" = "#be232d", "gelb" = "#f0c80f")
-dw_gradient = c("blau6" = "#002d5a", "blau5" = "#004887", "blau4" = "#0064b4",
-                "blau3" = "#007acd", "blau2" = "#008fe6", "blau1" = "#00a5ff",
-                "gelb" = "#f0c80f", "orangegelb" = "#f0aa00", "Hellorange" = "#ee8c0a",
-                "Orange" = "#eb6e14", "Orangerot" = "#d44820", "rot" = "#be232d")
+
 ```
 
 Incidence: Yearly cases of different viruses, barcode plot
